@@ -11,11 +11,10 @@ Also, I had an issue with the API and it accepting a false value for the melts a
 # Steps to Run this Application
 
 - Download the project and open in the desired IDE.
-- Navigate to the folder in your terminal/command line
-- Run the command 'npm install' in your terminal/command line
-- Run the command 'bower install' in your terminal/command line
-- Run the command 'nodemon' to start the server and run the Application
-
+- Navigate to the folder in your terminal/command line.
+- Run the command 'npm install' in your terminal/command line.
+- Run the command 'bower install' in your terminal/command line.
+- Run the command 'nodemon' to start the server and run the Application.
 - The application is configured to run on http://localhost:5000/.
 
 
