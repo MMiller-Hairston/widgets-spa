@@ -1,0 +1,25 @@
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="text-center">ID</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>Melts?</th>
+                <th>Inventory</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center">{{widget.id}}</td>
+                <td>{{widget.name}}</td>
+                <td>{{widget.color}}</td>
+                <td>{{widget.price}}</td>
+                <td>{{widget.melts}}</td>
+                <td>{{widget.inventory}}</td>
+                <td><a href="/edit/{{widget.id}}">Edit</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,59 @@
+<div class="row">
+
+    <!-- Widget listing -->
+    <div class="col-lg-12">
+        <div class="widget">
+            <div class="widget-header">Edit Widget</div>
+            <div class="widget-body">
+                <form class="form-horizontal" id="createForm" ng-submit="submit()">
+
+                    <legend>Edit Widget</legend>
+
+                    <!-- Name-->
+                    <div class="controls">
+                        Name
+                        <input id="widget-name" name="widget-name" type="text" placeholder="foo-bar" class="input-medium" ng-model="widget.name">
+                    </div>
+
+                    <!-- Price -->
+                    <div class="controls">
+                        <div class="input-prepend">
+                            Price
+                            <span class="add-on">$</span>
+                            <input id="widget-price" name="widget-price" class="input-medium" placeholder="0.00" type="text" ng-model="widget.price">
+                        </div>
+                    </div>
+
+                    <!-- Color -->
+                    <div class="controls">
+                        Color
+                        <select id="widget-color" name="widget-color" class="input-large" ng-model="widget.color">
+                            <option>red</option>
+                            <option>purple</option>
+                            <option>black</option>
+                            <option>green</option>
+                            <option>magenta</option>
+                            <option>white</option>
+                            <option>depends on the viewing angle</option>
+                        </select>
+                    </div>
+
+                    <!-- Melts -->
+                    <div class="controls">
+                        Melts
+                        <input type="checkbox" name="widget-properties" id="widget-properties-0" value="melts" ng-model="widget.melts">
+                    </div>
+
+                    <!-- Inventory -->
+                    <div class="controls">
+                        Inventory
+                        <input id="widget-count" name="widget-count" type="text" placeholder="#?" class="input-small" ng-model="widget.inventory">
+                    </div>
+                    <div class="controls">
+                        <button class="btn btn-sm btn-info" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div><!-- End Widget body -->
+        </div><!-- End Widget -->
+    </div><!-- End Column -->
+</div><!-- End Row -->

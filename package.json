@@ -1,0 +1,29 @@
+{
+  "name": "widgets-spa-angular",
+  "version": "1.0.0",
+  "description": "This is a simple multi-page HTML site. The goal of this project is to take this hardcoded HTML site, and make it hit an API for showing/listing user and widget information.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MMiller-Hairston/widgets-spa.git"
+  },
+  "author": "Michael Miller <mjmill22@asu.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MMiller-Hairston/widgets-spa/issues"
+  },
+  "homepage": "https://github.com/MMiller-Hairston/widgets-spa#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "path": "^0.12.7",
+    "request": "^2.79.0"
+  }
+}
