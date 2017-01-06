@@ -1,5 +1,23 @@
 # Widgets Single Page App Demo
-This is a simple multi-page HTML site. The goal of this project is to take this hardcoded HTML site, and make it hit an API for showing/listing user and widget information. 
+This is a simple multi-page HTML site. The goal of this project is to take this hardcoded HTML site, and make it hit an API for showing/listing user and widget information.
+
+# Notes
+To accomplish this task I chose to use Angular for the front-end framework. It is what I am most comfortable in, and it allow me to complete the task in a simple, timely manner.
+
+Normally I would split the controllers up in their own individual files to remain organized and modular, but for the convenience of the viewer to read through the code, I included these all in a single file.
+
+Also, I had an issue with the API and it accepting a false value for the melts attribute. Whether it was hard-coded, or acquired from the form, it would fail if the value equalled true.
+
+# Steps to Run this Application
+
+- Download the project and open in the desired IDE.
+- Navigate to the folder in your terminal/command line
+- Run the command 'npm install' in your terminal/command line
+- Run the command 'bower install' in your terminal/command line
+- Run the command 'nodemon' to start the server and run the Application
+
+- The application is configured to run on http://localhost:5000/.
+
 
 
 ## Features
@@ -21,4 +39,3 @@ There's an API available at `http://spa.tglrw.com:4000` for retrieving the data 
 - GET `/widgets/:id` [http://spa.tglrw.com:4000/widgets/:id](http://spa.tglrw.com:4000/widgets/:id)
 - POST `/widgets` for creating new widgets [http://spa.tglrw.com:4000/widgets](http://spa.tglrw.com:4000/widgets)
 - PUT `/widgets/:id` for updating existing widgets [http://spa.tglrw.com:4000/widgets/:id](http://spa.tglrw.com:4000/widgets/:id)
-

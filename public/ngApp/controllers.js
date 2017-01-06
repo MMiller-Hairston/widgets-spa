@@ -24,7 +24,10 @@ angular.module('myApp')
         console.log(err);
     });
 
-}]).controller('WidgetController', ['$scope', 'RouteFactory', function($scope, RouteFactory) {
+}]).controller('WidgetController', ['$scope', '$window', 'RouteFactory', function($scope, $window, RouteFactory) {
+
+    $scope.widget_melts = false;
+    console.log($scope.widget_melts);
 
     RouteFactory.getWidgets().then(function(response) {
         $scope.widgets = response.data;
@@ -34,16 +37,21 @@ angular.module('myApp')
     });
 
     $scope.submit = function() {
+
+        console.log('Inside', $scope.widget_melts)
+
         var widgetData = {
             name: $scope.widget_name,
             color: $scope.widget_color,
             price: $scope.widget_price,
-            melts: $scope.widget_melts,
+            melts: true,
             inventory: $scope.widget_inventory
         }
 
+
         RouteFactory.postWidgets(widgetData).then(function(response) {
             console.log('Successfully posted', widgetData);
+            $window.location="/widget";
         }).catch(function(err) {
             throw err;
             console.log(err);
